@@ -1,0 +1,18 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "ads-marketing",
+  "scenes": [
+    [
+      "basic-payroll",
+      "A single payroll specialist in a small Russian company's bright office, working alone at exactly one desktop computer, checking a printed timesheet against a payroll calculation sheet with a calculator. Background glass wall reveals a modest workshop with a few employees softly out of focus. One user doing payroll and personnel records, not a meeting. Three-quarter camera view shows person, monitor with generic unreadable table, and papers. Warm natural daylight, authentic work, no posing."
+    ],
+    [
+      "prof-team",
+      "Two payroll and personnel specialists working simultaneously at two separate desktop computers in a growing company's bright office. One checks payroll totals while the other handles employee documents; several neatly organized company folders and a small server cabinet visible. Camera wide enough to show clearly two independent workstations. Natural candid professional scene, real textures, no posing, no generic handshake."
+    ],
+    [
+      "corp-hr",
+      "A human-resources planning workshop at a larger company: three HR specialists discussing a wall-mounted organizational chart and employee training plan, one colleague interviewing a candidate in the softly blurred glass meeting room behind. Color-coded neutral cards without readable words, a laptop with generic chart. Clearly about recruitment, development and structured HR processes rather than just payroll. Bright believable office."
+    ]
+  ]
+}

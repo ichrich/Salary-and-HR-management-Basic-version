@@ -1,0 +1,129 @@
+﻿<div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-hide-medium w3-hide-large container_accordion w3-theme-d4" 
+        style="z-index: 201; max-width: 590px; width:85%; right:0; display: none;" id="mySidebar">
+
+    <button class="w3-bar-item w3-button w3-xlarge w3-center" onclick="w3_close()">Меню &times;</button>
+
+    <!-- <input type="text" id="Search_menu" onkeyup="Function_Search_throoth_menu()" placeholder="Поиск..." title="Type in a category"> -->
+    <input type="text" id="Search_menu" onkeyup="filterContent(this)" placeholder="Поиск..." title="Type in a category">
+
+    <div class="accordion" mouseleave="w3_close()" mouseover="w3_close()">
+        <ul id="menu_mobile">
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Программы 1С</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="software-1c_business1c_business1c.html">- 1С для Бизнеса</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="software-1c_gosuch1c_gosuch1c.html">- 1С для Госучреждений</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="software-1c_platform.html">- Технологическая платформа 1С</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Отраслевые решения 1С</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_transport_transport.html">Автотранспорт</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_autoservice_autoservice.html">Автосервис</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_glonass-gps_glonass-gps.html">ГЛОНАСС-GPS</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_gkh_gkh.html">ЖКХ, ТСЖ, ЖСК</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_izdpol_izdpol.html">Издательство, полиграфия</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_culture_culture.html">Культура</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_Logistica_Logistica.html">Логистика</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_med_med.html">Медицина</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_esteblish_esteblish.html">Недвижимость</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_non-commercial_non-commercial.html">Некоммерческие организации</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_education_education.html">Образование</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_foodprom_foodprom.html">Пищевая промышленность</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_manufacture_manufacture.html">Промышленное производство</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_agrofor_agrofor.html">Сельское и лесное хозяйство</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_insurance_insurance.html">Страхование</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_building_building.html">Строительство</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_vodosnab_vodosnab.html">ВОДОСНАБЖЕНИЕ</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_vodosnab_teploceti.html">ТЕПЛОСЕТИ</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_trade_trade.html">Торговля</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_energy-soft_energy-soft1c.html">Энергетика</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_crm_crm.html">CRM</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="otrasli_service_uslugi.html">Услуги (бытовые)</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">1С Предприятие 7.7</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="1С77_buh77.html">1С Бухгалтперия 7.7</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="1С77_zik77.html">1С Зарплата и кадры 7.7</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="1С77_trade77.html">1С Торговля и склад 7.7</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="1С77_complex77.html">1С Комплексная 7.7</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Сервисы 1С</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_otchetnost.html">1С-Отчетность</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_kontragent.html">1С-Контрагент</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_autoupdate.html">Обновление 1С</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_edo.html">1С-ЭДО</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_link.html">1С-Линк</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_info_its.html">1С-ИТС (Информационная система 1С:ИТС)</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_kp_prof.html">КП (Комплект поддержки) - Комлпект сервисов 1С</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_fresh.html">1С-Фреш (1С в Облаке) через Интернет.</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_lk-employee.html">1С Кабинет сотрудника</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_doc-recognition.html">1С Распознавание первичных документов</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="services_park.html">1С-ПАРК Риски</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Обновление 1С и ИТС</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-techno.html">Автоматическое через интернет</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-prof.html">- ИТС-ПРОФ</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-techno.html">- ИТС-ТЕХНО</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-budget.html">- ИТС-Бюджет</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-medicine.html">- ИТС-Медицина</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-building.html">- ИТС-Строительство</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_its-otrasli.html">- ИТС-Отраслевой</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="update_update1c.html">Настроенных конфигураций</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Услуги по 1С</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_vnedrenie1c.html">Внедрение 1С</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_install1c.html">Установка и настройка 1С</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_1c-consulting.html">Консультационные услуги по 1С</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_nastr-adfunctions.html">Настройка доп. функционала</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_biz-processing.html">Описание Бизнесс-процессов</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="support-1c_abonentka.html">Сопровождение по 1С</a>
+                	</div>
+                </li>
+                
+                <li>
+                	<input type="checkbox" checked>
+                	<i class="w3-padding-4"></i>
+                	<div class="p4 w3-theme-d4">Интеграция 1С</div>
+                	<div class="msg">
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_ko.html">с Кассовым оборудованием</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_site.html">с Интергнет-магазином</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_1c-telefone.html">с Телефонией</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_1c-billing.html">Биллинговые системы</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_crm-systems.html">CRM системы</a>
+                		<a class = "w3-bar-item w3-button w3-padding-large w3-white" href="integration-1c_1c-cms.html">CMS в 1С</a>
+                	</div>
+                </li>
+                 
+        </ul>
+    </div>
+</div>
