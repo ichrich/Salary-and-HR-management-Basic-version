@@ -1,8 +1,6 @@
 /* Page-local layer over the existing W3 design system. No site-wide overrides. */
 .zup-page {text-align:left;background:#fff;}
 .zup-page.zup-modal-open {overflow:hidden;}
-.zup-page #Veil {position:fixed;inset:0;z-index:202;background:rgba(0,0,0,.3);}
-.zup-page #mySidebar {z-index:203;max-width:100vw;}
 .zup-skip {position:absolute;left:16px;top:-70px;z-index:100000;background:#fff;padding:12px;color:#090e99;}
 .zup-skip:focus {top:12px;}
 .zup {--blue:#2196f3;--navy:#090e99;--yellow:#ffffcc;--ink:#252b33;--muted:#596370;color:var(--ink);line-height:1.6;padding-top:24px;padding-bottom:34px;}

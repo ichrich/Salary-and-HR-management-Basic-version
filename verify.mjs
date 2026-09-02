@@ -17,7 +17,8 @@ const sandbox = { window: {} }; vm.runInNewContext(fs.readFileSync(path.join(dir
 assert.equal(sandbox.window.ZUP_BASIC.sku, '2900001856744');
 assert.equal(sandbox.window.ZUP_BASIC.prices.basic, 11100);
 assert(html.includes('11 100 ₽') && html.includes('39 700 ₽') && html.includes('190 900 ₽'));
-assert(html.includes('file="header.html"') && html.includes('file="footer.html"'));
+assert(!html.includes('<!--#include'), 'no shared header, menu or footer includes');
+assert(!/id="(?:main_navbar|mySidebar|Veil|circle_buttons)"/.test(html), 'no shared navigation');
 assert(html.includes('rel="canonical"') && html.includes('name="description"'));
 assert(!html.includes('href="#"'), 'no empty links in new page');
-console.log('PASS: H1, metadata, JSON-LD, 10 accordions, unique IDs, anchors, local assets, SSI, SKU, verified prices.');
+console.log('PASS: H1, metadata, JSON-LD, 10 accordions, unique IDs, anchors, local assets, no shared layout, SKU, verified prices.');

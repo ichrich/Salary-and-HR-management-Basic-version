@@ -46,33 +46,3 @@
   });
   document.head.appendChild(schema);
 })();
-
-// Existing SSI mobile sidebar hooks, made safe when previewed without includes.
-function w3_open() {
-  const menu = document.getElementById('mySidebar');
-  if (!menu) return;
-  menu.style.right = '0';
-  menu.style.display = 'block';
-  const veil = document.getElementById('Veil');
-  veil.hidden = false;
-  veil.style.display = 'block';
-  document.getElementById('zup-menu-toggle')?.setAttribute('aria-expanded', 'true');
-  menu.querySelector('button')?.focus();
-}
-function w3_close() {
-  const menu = document.getElementById('mySidebar');
-  if (menu) { menu.style.right = '-600px'; menu.style.display = 'none'; }
-  const veil = document.getElementById('Veil');
-  if (veil) { veil.hidden = true; veil.style.display = 'none'; }
-  document.getElementById('zup-menu-toggle')?.setAttribute('aria-expanded', 'false');
-  document.getElementById('zup-menu-toggle')?.focus();
-}
-function filterContent(input) {
-  const query = input.value.trim().toLocaleLowerCase('ru');
-  document.querySelectorAll('#mySidebar .msg a').forEach(link => {
-    link.style.display = link.textContent.toLocaleLowerCase('ru').includes(query) ? '' : 'none';
-  });
-}
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && document.getElementById('zup-menu-toggle')?.getAttribute('aria-expanded') === 'true') w3_close();
-});
