@@ -14,7 +14,13 @@ html = html.replace(/<!--#include file="([^"]+)"-->/g, (_, file) => {
   fragment = fragment.replace(/href="(?!https?:|tel:|mailto:|#|javascript:)([^"]+)"/g, (_, href) => `href="${new URL(href, origin).href}"`);
   return fragment;
 });
-// No <base>: it would send #section links away from the preview document.
-html = html.replace(/(src|href)="((?:zup-basic\/|style)[^"]+)"/g, '$1="../$2"');
-fs.writeFileSync(path.join(directory, 'preview.html'), html);
-console.log('Built zup-basic/preview.html with existing public site includes. Production file unchanged.');
+// Keep the published folder standalone, including under a GitHub Pages project URL.
+// No <base>: section anchors must remain on this document.
+html = html.replace(/(src|href)="zup-basic\/([^"]+)"/g, '$1="$2"');
+for (const stylesheet of ['style.css', 'style-w3.css', 'style-after-w3.css']) {
+  const css = fs.readFileSync(path.join(root, stylesheet), 'utf8')
+    .replaceAll('url(images/branding.svg)', 'url(reference/images/branding.jpg)');
+  fs.writeFileSync(path.join(directory, stylesheet), css);
+}
+fs.writeFileSync(path.join(directory, 'index.html'), html);
+console.log('Built standalone zup-basic/index.html for GitHub Pages. Production file unchanged.');

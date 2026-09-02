@@ -1,0 +1,204 @@
+﻿a{
+    color: #090E99;
+    }       
+a:hover{
+    /*font-weight: bold;*/
+    text-decoration: none;
+    /*background: #BAB5B5;  /*#27BBF1*/
+    }    
+p.red {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+span {
+    font-family: Verdana, serif !important;
+    font-size: 16px !important;
+ /*    color: #000000;    */
+/*    text-align: left;    
+    padding-left: 20px;*/
+    }
+
+table.Page {
+    border: 1px none black;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    text-decoration-color: #000000;
+    }
+thead.Page {
+    border: 0 none black;
+    border-collapse: collapse;
+    text-align: center;
+    text-indent: 0;
+    background-color: #FFFFFF;
+    }
+table.PriceTable th {
+    font-weight: 600;
+    border-left-style: none;
+    }
+
+th.head_content {
+    background-color: #FFFF99;
+    /*max-width: 700px;*/
+    /*min-width: 200px;  */
+    width: 75%;  
+    }
+th.head_price {
+    background-color: #FFFF99;
+    min-width: 80px;
+    width: 100px;  
+    }  
+
+th.head_count {
+    background-color: #FFFF99;
+    min-width: 70px; 
+    width: 80px;    
+    }  
+th.head_hours {
+    background-color: #FFFF99;
+    width: 100px;   
+    min-width: 70px;  
+    }      
+table.PriceTable td {
+    font-family: Verdana, serif;
+    /*font-size: 14px;*/
+    color: #000000;
+    text-align: left;
+    padding-left: 20px;
+    }
+
+td.good {
+    text-align: left;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+    border-top: 1px none grey;
+    border-right: 1px none grey;
+    }    
+td.good1 {
+    text-align: left;
+    padding-left: 0px;
+    } 
+td.buy {
+    text-align: center;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 8px;
+    border-top: 1px none grey;
+  /* border-bottom: 1px solid grey;   */
+    border-right:: none grey;  
+ /*      border-right: : 1px solid grey;  */
+    border-left: 0px none;
+    }  
+td.buy1 {
+    text-align: center;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    }    
+td.compare {
+    text-align: center!important;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 0px;
+    }
+td.price {
+    text-align: right!important;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 8px;
+    border-left: 1px solid grey;
+    border-top: 1px none grey;
+    border-right: 1px none grey;
+    }
+
+td.price_bordless {
+    text-align: right!important;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 8px;
+    border-left: 1px none grey;
+    border-top: 1px none grey;
+    border-right: 1px none grey;
+    }
+
+td.price1 {
+    text-align: right!important;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 16px;
+    }
+
+th.Page {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000099;
+    }
+td.Page {
+    background-color: #FFFFFF;
+    font-family: Verdana, serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: justify;
+    text-indent: 0;
+    }
+
+table.PriceTable {
+    border-collapse: collapse;
+    }
+thead.PriceTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    text-indent: 0;
+
+    }
+tbody.PriceTable {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    }
+tbody.PriceTable1 {
+    border-collapse: collapse;
+/*    border: 1px solid grey;*/
+    }    
+table.PriceTable td{
+    vertical-align: middle;
+    }
+
+
+#Search_menu {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border:1px solid #ddd;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+
+#header_container, #header_h1{
+transition: all 0.5s ease-in-out;
+}
+
+.table_gift tr td {
+  vertical-align:top;
+}
+.table_gift tr td div.icon{
+  margin:2 10 0 0; color: #090E99;
+}
+.table_gift tr td i {margin: 2 4 0 0;}
+
+
+
+
+
+
+

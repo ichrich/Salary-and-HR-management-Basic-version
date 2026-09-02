@@ -1,0 +1,694 @@
+﻿BODY {
+/*    padding-top: 0px; 
+    padding-left: auto;
+    width: 100%; 
+    height: 100%; 
+    margin: 0 auto;
+    left: 0; 
+    bottom: 0;
+    right: 0;*/
+    text-align: justify;
+/*     text-indent: 0;
+    font-family: Verdana, Tahoma, serif;
+    font-size: 14px;*/
+    }
+ul li p { 
+    text-align: justify;
+}
+
+ul li { 
+    text-align: left;
+}
+
+
+#header {
+    height: 150px;
+    left: 0; 
+    top: 0; 
+    right: 0;
+    padding: 0 auto;
+    /*background: #090E99;  Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    z-index: 6;
+    background-size: cover;
+    background: url(reference/images/branding.jpg) no-repeat left 100% #090E99; /* Путь к фоновому изображению */
+    }
+#branding {
+    height: 250px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1500px;
+    }
+#text_over_branding {
+    left: 30px;  
+    top: 44px;
+    z-index: 105;
+    }
+.header_p {
+    display: block;
+    margin: 20px 20px 0px 150px;
+    padding: 0;
+    float: left;
+    border: 0px solid #000000;
+    width: 600px; /* Ширина слоя */
+    text-align: right;
+    font-family:  Arial, serif, Verdana;
+    font-size: 30px;
+    text-shadow: 3px 3px 0px black;
+    font-weight: bold;
+    }
+.header_pt {
+    display: block;
+    margin: 10px 20px 0px 150px;
+    padding: 0;
+    float: left;
+    border: 0px solid #000000;
+    width: 600px; /* Ширина слоя */
+    text-align: right;
+    font-family:  Arial, serif, Verdana;
+    font-size: 28px;
+    text-shadow: 3px 3px 0px black;
+    font-weight: bold;
+    }
+.header_pe {
+    display: block;
+    margin: 10px 20px 0px 150px;
+    padding: 0;
+    float: left;
+    border: 0px solid #000000;
+    width: 600px; /* Ширина слоя */
+    text-align: right;
+    font-family:  Arial, serif, Verdana;
+    font-size: 20px;
+    text-shadow: 3px 3px 0px black;
+    font-weight: bold;
+    }
+
+form.search {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    }
+input.seachfield {
+    width: 225px;
+    }
+
+h1 {
+    font-family: Arial, Helvetica, Verdana, serif;
+    font-size: 18px;
+/*    color: #000;*/
+    text-align: center
+    }
+h2 {
+    font-family: inherit;
+    font-size:  inherit;
+    color:  inherit;
+    text-align:  inherit;
+    vertical-align: inherit;
+    padding: inherit;
+    margin: inherit;
+    }    
+
+div.addressbar {
+    margin: 0 auto; 
+    padding: 0 0 10px 0;
+    text-align: justify;
+    text-indent: 0;
+    font-family: Verdana, Tahoma, serif;
+    font-size: 14px;
+    }
+div.addressbar a{
+    color: #090E99;
+    }      
+div.addressbar a:hover{
+    color: #000;
+    /*font-weight: bold;*/
+    text-decoration: none;
+    /*background: #BAB5B5;  /*#27BBF1*/
+    }
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    min-height: 800px;
+    max-width: 900px;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    text-indent: 0;
+    font-family: Verdana, Tahoma, serif;
+    font-size: 14px;
+    }
+
+a{
+    color: #090E99;
+    }       
+a:hover{
+    /*font-weight: bold;*/
+    text-decoration: none;
+    /*background: #BAB5B5;  /*#27BBF1*/
+    }    
+
+.mcontent {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20px;
+    text-align: justify;
+    text-indent: 0;
+    font-family: Verdana, serif;
+    font-size: 20px;
+    }
+
+.navbar_background {
+    background: #090E99;
+    background: -webkit-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -moz-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -o-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -ms-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    /*border-radius: 8px 8px 0px 0px;*/
+    color: #fff;
+    }
+
+#nav7 { /* подменю перемещается относительно меню */
+    position: relative;
+    display: block;
+    padding: 0 auto; 
+    margin: 0 auto;
+    background: #27BBF1;
+/*    padding-left: 12%; */
+    }
+#nav7 li {
+    margin: 0;
+    padding: 0;
+    }
+#nav7 > li {
+    display: table-cell;
+    text-align: center;
+    background: #FFF;
+    color: #000;
+    /*border: 1px solid #000000;*/
+    background: #26316d;/*background: #090E99;*/
+/*    background: -webkit-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -moz-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -o-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: -ms-linear-gradient(bottom, #090E99 0%,#528AFA 100%);
+    background: linear-gradient(bottom, #090E99 0%,#528AFA 100%);*/
+    /*border-radius: 8px 8px 0px 0px;*/
+    }
+#nav7 li.menu ul {
+    padding: 10px 12px 12px 12px;
+    background: #fff;
+    }
+#nav7 li.menu_s_podnav ul {
+    padding: 10px 12px 12px 12px;
+    background: #16c5f3;
+    }
+#nav7 ul.left-podmenu {
+    float: left;
+    width: 45%;
+    }
+#nav7 ul.right-podmenu {
+    float: right;
+    width: 50%;
+    }
+#nav7 ul.right-podmenu_page {
+    float: right;
+    width: 45%;
+    }
+#nav7 > li > div{
+    position: absolute;
+ /*   width: 80%;*/
+    z-index: 50;
+    display: none;
+    }
+
+@media (max-width:993px) { #nav7 > li > div { 
+    left: 2%; 
+    right: 2%; 
+    }
+} 
+
+@media (min-width:994px) and (max-width:1999px) { #nav7 > li > div { 
+    left: 4%; 
+    right: 4%; 
+    }
+} 
+@media (min-width:1200px) { #nav7 > li > div { 
+    left: 10%; 
+    right: 10%; 
+    }
+} 
+
+#nav7 > li > div.podmenu{
+    background: #fff;
+    }
+#nav7 > li > div.podmenu_s_podnav{
+    background: #16c5f3;
+    
+    }
+#nav7 li.podmenu ul.right-podmenu_page {
+    display: none;
+    position: absolute;
+    height: 94%;  
+    width: 57%;
+    left: 41%; 
+    top: 3%;   
+    overflow-y: auto;
+    overflow-x: none;
+    background: #fff;
+    /*border-radius: 5px 5px 5px 5px;*/
+    overflow-x:none; 
+    }  
+
+
+#nav7 li.podmenu:hover  ul.right-podmenu_page {
+    display: block;
+    position: absolute;
+    }
+#nav7 > li:hover > div { 
+    position: absolute;
+    display: block;
+    }
+
+#nav7 ul li.podmenu {
+    display: block;
+    text-align: left;
+    }
+#nav7 > li > a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    }
+
+#nav7 li.podmenu > a {
+    display: block;
+    padding: 7px 15px;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    }
+#nav7 li.podmenu:hover > a{
+    color: #000;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+    /*background: #BAB5B5;  /*#27BBF1*/
+    }
+
+#nav7 > li.menu:hover {
+    background: #fff;
+    }
+#nav7 > li.menu_s_podnav:hover {
+    background: #16c5f3;
+    }
+#nav7 > li.menu_s_podnav li.podmenu:hover a{
+    background: #fff;
+    }
+#nav7 > li:hover a{
+    color: #000;
+    }
+
+footer {
+    background: #090E99; 
+    color: #fff; 
+    }
+  
+footer li { 
+    list-style: none; 
+    padding: 5px 0 3px 0;
+    color: #61CAFA;
+    }
+footer a {
+    color: #61CAFA;
+    }
+footer a:hover {
+    color: #fff;
+    text-decoration:none;
+    }
+footer div.p2 { 
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    }
+
+
+
+div.clear {
+    clear: both;
+    }
+div.none {
+    display: none;
+    }
+
+
+
+ul li.osn {
+    margin-bottom: 7px;
+    background-image: none;
+    font-family: Verdana, serif;
+/*    font-weight: 300;*/
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+/*    line-height: 16px;*/
+    list-style: disc;
+    color: #090E99;
+    text-decoration: none;
+}
+   
+
+
+@charset "UTF-8";
+/*
+* Лёгкийи и отзывчивый аккордеон
+* минимум кода, максимум функционала
+* без javascript, на чистом CSS
+* работает на скрытых checkbox.
+* автор: @dobrovoi dbmast.ru
+*/ 
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* 
+* Формируем базовый контейнер аккордеона 
+*/
+.accordion {
+    width: 100%;
+/*
+ширина произвольная выбирается
+*в зависимостиот места размещения 
+*/
+    /*max-width: 600px;*/
+    min-height: 0;
+    display: block;
+/* относительное позиционирование */
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    /*background-color: #fefffa;*/
+    overflow: hidden
+}
+/* заголовки панелей аккордеона */
+.accordion .p4 {
+    text-align: left;
+    /*font-size: 14px;*/
+    font-weight: normal;
+    /*font-family: Verdana, Tahoma, serif, sans-serif;*/
+    /*letter-spacing: 1px;*/
+    display: block;
+    margin: 0;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: #000;
+/*    background: #a1ecff;*/
+    border-top: 1px solid #2479a5;    
+/*    border-bottom: 1px solid #2479a5;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.accordion #ul_accordion_content h4 {
+    padding: 10px 42px;
+}
+/* заголовки панелей аккордеона при наведении
+* в данном варианте не срабатывает
+*/
+/* .accordion h2:hover {
+    display: block;
+    background-color: #005049;
+}
+*/
+
+/* Формируем блоки с содерханием */
+.msg {
+  position: relative;
+  overflow: hidden;
+  max-height: 3800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  background-color: #fff;
+  /*border-bottom: 1px solid #2479a5;*/
+}
+
+/* оформляем параграфы */
+.msg p {
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px
+}
+
+/* Позаботимся о небольших экранах */
+/*@media (max-width: 550px) {
+  .accordion {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+} */
+
+/* Формируем неупорядоченный список */
+.accordion > ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion  ul {
+  list-style: disc;
+}
+
+.accordion ul li ul li{
+  padding: 6px 0;
+}
+/* Определяем и формируем отдельный элемент списка 
+ * в который поместим скрытый флажек,
+ * заголовок панелей и блок с содержанием
+*/
+.accordion ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* устанавливаем время ожидания перед воспроизведением анимации 
+ * на основе нумерации в дереве элементов
+*/
+/*.accordion ul li:nth-of-type(1) {
+  animation-delay: 0;
+}
+.accordion ul li:nth-of-type(2) {
+  animation-delay: 0;
+}
+.accordion ul li:nth-of-type(3) {
+  animation-delay: 0;
+}
+.accordion ul li:last-of-type {
+  padding-bottom: 0;
+}*/
+
+/* Сформируем  указатель переключения состояния аккордеона */
+.accordion ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+/* расположим указатель на панели заголовка справа */
+  right: 25px;
+}
+
+/* Сформируем  указатель переключения состояния аккордеона */
+.accordion #ul_accordion_content li i {
+/* расположим указатель на панели заголовка справа */
+  left: 25px;
+}
+
+/* "Рисуем " сам указатель */
+.accordion ul li i:before, .accordion ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 4px;
+  height: 12px;
+}
+
+/* "Рисуем " сам указатель */
+.accordion #ul_accordion_content li i:before, .accordion #ul_accordion_content li i:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 4px;
+  height: 12px;
+}
+
+/* Добавляем элемент трансформации указателя при переключении */
+.accordion ul li i:before {
+  transform: translate(-3px, 0) rotate(45deg);
+}
+.accordion ul li i:after {
+  transform: translate(3px, 0) rotate(-45deg);
+}
+
+/* Делаем чекбокс скрытым*/
+.accordion ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+/* Когда у флажка установлен checked  
+ * блок с содержанием скрыт
+*/
+.accordion ul li input[type=checkbox]:checked ~ div.msg {
+  margin-top: 0;
+  max-height: 0;
+  /*opacity: 0;*/
+  /*transform: translate(0, 50%);*/
+}
+/* А указатель показывает вниз */
+.accordion ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(3px, 0) rotate(45deg);
+}
+.accordion ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-3px, 0) rotate(-45deg);
+}
+/*  Устанавливаем эффект перехода
+ * между двумя состояниями указателя 
+*/
+div.msg, ul li i:before, ul li i:after {
+    transition: all 0.4s ease-in-out;
+}
+/**
+ * Изображения внутри аккордеона
+ * ...сделаем их отзывчивыми
+ */
+.accordion .msg img {
+    width: 100%;
+    height: auto;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* полноразмерная картинка */
+.msg img .large-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* миниатюра слева */
+ .msg img.img-left {
+    width: 25%;
+    float:left;
+    margin:7px 15px 5px 0;
+}
+/* миниатюра справа */
+.msg img.img-right {
+    width: 25%;
+    float:right;
+    margin:7px 0 5px 15px;
+}
+
+/* Встраеваемое видео */
+.video-responsive {
+/*    margin: 20px;*/
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+/*    -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+/* Предусмотри использование кода встраиваемого видео
+ *через iframe, object или embed */
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mySidebar {
+    transition: all 0.4s ease-in-out;
+}
+
+ #Veil {
+    transition: all 0.8s ease-in-out;
+}
+
+
+/*ЛЕНТА - ЛЕНТОЧКА*/
+
+.ribbon {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+ 
+.ribbon p.ribbon_text {
+    color: #9ac42c;
+    display: inline;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    }
+
+.ribbon p.ribbon_text span {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    display: inline-block;
+    left: -25px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), inset 0px 5px 30px rgba(255,255,255,0.2);
+    top: 30px;
+    background: #d93131;
+    width: 130px;
+    padding: 3px 10px;}
+
+
+
+.ribbon p.ribbon_text:before {
+    content:"";
+    width:0;
+    position:absolute;
+    height:0;
+    top:-17px;
+    border-color: transparent transparent #eeeeee transparent;
+    z-index: -1;
+    left:69px;
+    border:17px solid;}
+ 
+.ribbon p.ribbon_text:after {
+    content:"";
+    width:0;
+    position: absolute;
+    height:0;
+    top: 74px;
+    border:17px solid;
+    z-index:-1;
+    border-color:#eeeeee transparent transparent transparent;
+    left:-10px;}
