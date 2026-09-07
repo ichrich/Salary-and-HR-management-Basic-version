@@ -25,6 +25,7 @@
 .zup-actions {display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
 .zup .w3-btn {white-space:normal;line-height:1.4;padding:12px 20px;text-decoration:none;font-size:15px;}
 .zup-secondary {display:inline-block;padding:10px 0;font-weight:700;}
+.zup-arrow-down {display:inline-block;width:18px;height:18px;margin-left:5px;vertical-align:-4px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
 .zup .zup-small {font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px;}
 .zup-hero-photo {margin:0;display:flex;flex-direction:column;background:#eaf5fc;}
 .zup-hero-photo img {width:100%;height:100%;min-height:330px;max-height:440px;object-fit:cover;object-position:57% center;}

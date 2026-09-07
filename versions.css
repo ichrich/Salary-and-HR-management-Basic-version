@@ -1,0 +1,7 @@
+.zup-choice {display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.zup-choice article {padding:23px;border:1px solid #d7e1e8;background:#fff;display:flex;flex-direction:column;}
+.zup-choice article.is-best {background:#ffffcc;border-top:4px solid #2196f3;}
+.zup-choice h3 {font-size:20px;}.zup-choice p {font-size:14px;}.zup-choice a {margin-top:auto;font-weight:700;}
+.zup-yes {color:#17669c;font-weight:700;}.zup-no {color:#6d747c;}
+.zup-cloud-price {font-size:17px;font-weight:700;color:#090e99;}
+@media(max-width:600px){.zup-choice{grid-template-columns:1fr}.zup-choice article{padding:19px}}
