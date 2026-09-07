@@ -6,7 +6,6 @@ const directory = path.dirname(fileURLToPath(import.meta.url));
 const root = path.dirname(directory);
 const filename = 'software-1c_business1c_zrp_uprav_personal_base.html';
 let html = fs.readFileSync(path.join(root, filename), 'utf8');
-html = html.replace('content="index,follow"', 'content="noindex,nofollow"');
 // Keep the published folder standalone, including under a GitHub Pages project URL.
 // No <base>: section anchors must remain on this document.
 html = html.replace(/(src|href)="zup-basic\/([^"]+)"/g, '$1="$2"');
