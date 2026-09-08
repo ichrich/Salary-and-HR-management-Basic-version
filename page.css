@@ -56,6 +56,9 @@
 .zup-details {border-bottom:1px solid #d7e1e8;padding:0 4px;}
 .zup-details summary {cursor:pointer;padding:18px 0;color:var(--navy);font-weight:700;}
 .zup-details p {max-width:900px;}.zup-details[open] {padding-bottom:15px;}.zup-details a {font-size:13px;}
+.zup-detail-body {max-width:900px;padding:0 0 8px 18px;border-left:3px solid #d9edf9;}
+.zup-detail-body ul {margin:0 0 14px;padding-left:20px;}
+.zup-detail-body li {margin:5px 0;}
 .zup-price-block {display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:32px;background:var(--yellow);border-top:5px solid var(--blue);}
 .zup-price {display:block;font:400 44px/1.1 Arial,sans-serif;color:var(--navy);}
 .zup-service {background:#fff;padding:26px;align-self:center;}.zup-service p {font-size:14px;}.zup-service>a {font-size:13px;}
