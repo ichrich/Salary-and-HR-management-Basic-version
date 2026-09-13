@@ -10,10 +10,4 @@
   }));
   dialog?.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
   dialog?.addEventListener('close', () => { frame.removeAttribute('src'); document.body.classList.remove('zup-modal-open'); opener?.focus(); });
-  const items = [...document.querySelectorAll('#faq details')];
-  if (items.length) {
-    const schema = document.createElement('script'); schema.type = 'application/ld+json';
-    schema.textContent = JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:items.map(x => ({'@type':'Question',name:x.querySelector('summary').textContent,acceptedAnswer:{'@type':'Answer',text:x.querySelector('p').textContent}}))});
-    document.head.appendChild(schema);
-  }
 })();

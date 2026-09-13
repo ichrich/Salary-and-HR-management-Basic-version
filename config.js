@@ -1,4 +1,4 @@
-// Published routes and official 1C fallbacks for pages not yet released.
+// Переходы ведут только на страницы нашего сайта.
 window.ZUP_BASIC = Object.freeze({
   checkedAt: '2026-09-02',
   prices: { basic: 11100, prof: 39700, corp: 190900 },
@@ -7,7 +7,7 @@ window.ZUP_BASIC = Object.freeze({
   routes: {
     general: 'https://ekburg.1c-center.net/software-1c_business1c_zrp_uprav_personal.html',
     prof: 'prof.html',
-    corp: 'https://1c.ru/',
+    corp: 'https://ekburg.1c-center.net/software-1c_business1c_zrp_uprav_personal.html',
     cloud: 'https://ekburg.1c-center.net/services_fresh.html',
     rent: 'tel:+73432980470'
   }

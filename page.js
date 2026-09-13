@@ -33,16 +33,4 @@
     document.body.classList.remove('zup-modal-open');
     opener?.focus();
   });
-
-  // The data matches the visible FAQ; no invisible SEO-only questions.
-  const schema = document.createElement('script');
-  schema.type = 'application/ld+json';
-  schema.textContent = JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'FAQPage',
-    mainEntity: [...document.querySelectorAll('#faq details')].map(item => ({
-      '@type': 'Question', name: item.querySelector('summary').textContent,
-      acceptedAnswer: { '@type': 'Answer', text: item.querySelector('p').textContent }
-    }))
-  });
-  document.head.appendChild(schema);
 })();

@@ -47,7 +47,7 @@
 .zup-feature-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 .zup-feature-grid article {border-top:3px solid #2196f3;background:#f1f8fd;padding:22px;}
 .zup-feature-grid article>b {display:block;color:#17669c;font-size:13px;margin-bottom:16px;}
-.zup-feature-grid p {margin:0;font-size:14px;}.zup-feature-grid article:last-child {grid-column:span 2;}
+.zup-feature-grid p {margin:0;font-size:14px;}.zup-feature-grid article:last-child:nth-child(3n+2) {grid-column:span 2;}.zup-feature-grid article:last-child:nth-child(3n+1) {grid-column:1/-1;}
 .zup-section-head {display:flex;justify-content:space-between;gap:20px;align-items:center;}
 .zup-section-head>a {flex-shrink:0;font-size:13px;}
 .zup-limit-grid {display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #e0dcae;background:#fffef1;}
