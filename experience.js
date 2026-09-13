@@ -112,11 +112,6 @@
 
   const primaryBuy = document.querySelector('[data-checkout]') || document.querySelector('[data-primary-buy]');
   const demoUrl = document.body.dataset.demoUrl || 'https://hrm.demo.1c.ru/corp/ru_RU/';
-  const quick = document.createElement('div');
-  quick.className = 'zup-quick-access';
-  quick.setAttribute('aria-label', 'Быстрые действия');
-  quick.innerHTML = '<button class="zup-quick-buy" type="button">Купить</button><button class="zup-quick-demo" type="button">Запустить демо</button>';
-  (document.querySelector('[data-quick-anchor]') || document.querySelector('.zup-version-switch') || document.querySelector('main')?.firstElementChild)?.after(quick);
 
   const cart = document.createElement('a');
   cart.className = 'zup-float-action zup-float-cart';
@@ -144,7 +139,6 @@
     else window.location.href = demoUrl;
     document.body.classList.add('zup-modal-open');
   };
-  quick.querySelector('.zup-quick-demo').addEventListener('click', event => openDemo(event.currentTarget));
   document.querySelectorAll('[data-demo]').forEach(button => button.addEventListener('click', event => {
     event.preventDefault();
     openDemo(event.currentTarget);
@@ -155,7 +149,6 @@
     document.body.classList.remove('zup-modal-open');
     demoOpener?.focus();
   });
-  quick.querySelector('.zup-quick-buy').addEventListener('click', () => primaryBuy?.click());
   cart.addEventListener('click', event => {
     if (!primaryBuy) return;
     event.preventDefault();
