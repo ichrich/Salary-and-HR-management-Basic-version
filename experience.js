@@ -116,7 +116,7 @@
   quick.className = 'zup-quick-access';
   quick.setAttribute('aria-label', 'Быстрые действия');
   quick.innerHTML = '<button class="zup-quick-buy" type="button">Купить</button><button class="zup-quick-demo" type="button">Запустить демо</button>';
-  (document.querySelector('.zup-version-switch') || document.querySelector('main')?.firstElementChild)?.after(quick);
+  (document.querySelector('[data-quick-anchor]') || document.querySelector('.zup-version-switch') || document.querySelector('main')?.firstElementChild)?.after(quick);
 
   const cart = document.createElement('a');
   cart.className = 'zup-float-action zup-float-cart';
