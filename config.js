@@ -7,7 +7,7 @@ window.ZUP_BASIC = Object.freeze({
   routes: {
     general: 'https://ekburg.1c-center.net/software-1c_business1c_zrp_uprav_personal.html',
     prof: 'prof.html',
-    corp: 'https://ekburg.1c-center.net/software-1c_business1c_zrp_uprav_personal.html',
+    corp: 'corp.html',
     cloud: 'https://ekburg.1c-center.net/services_fresh.html',
     rent: 'tel:+73432980470'
   }
