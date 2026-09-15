@@ -128,7 +128,8 @@
   const demo = document.createElement('dialog');
   demo.className = 'zup-demo-dialog';
   demo.setAttribute('aria-labelledby', 'demo-title');
-  demo.innerHTML = '<div class="zup-dialog-head"><h2 id="demo-title">Демо 1С:ЗУП</h2><button type="button" data-demo-close aria-label="Закрыть демо">×</button></div><p class="zup-demo-note">Выберите пользователя из списка. Пароль для демонстрационной базы не требуется.</p><iframe title="Демонстрационная база 1С:ЗУП" allow="clipboard-read; clipboard-write"></iframe>';
+  const closeIcon = '<svg class="zup-close-icon fa-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg>';
+  demo.innerHTML = '<div class="zup-dialog-head"><h2 id="demo-title">Демо 1С:ЗУП</h2><button class="zup-demo-close-top" type="button" data-demo-close aria-label="Закрыть демо">' + closeIcon + '</button></div><p class="zup-demo-note">Выберите пользователя из списка. Пароль для демонстрационной базы не требуется.</p><iframe title="Демонстрационная база 1С:ЗУП" allow="clipboard-read; clipboard-write"></iframe><div class="zup-demo-footer"><button class="zup-demo-close-bottom" type="button" data-demo-close>' + closeIcon + '<span>Закрыть</span></button></div>';
   document.body.append(demo);
   const demoFrame = demo.querySelector('iframe');
   let demoOpener;
@@ -143,7 +144,7 @@
     event.preventDefault();
     openDemo(event.currentTarget);
   }));
-  demo.querySelector('[data-demo-close]').addEventListener('click', () => demo.close());
+  demo.querySelectorAll('[data-demo-close]').forEach(button => button.addEventListener('click', () => demo.close()));
   demo.addEventListener('close', () => {
     demoFrame.removeAttribute('src');
     document.body.classList.remove('zup-modal-open');
